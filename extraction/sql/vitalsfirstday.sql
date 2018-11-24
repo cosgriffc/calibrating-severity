@@ -139,5 +139,5 @@ SELECT pp.patientunitstayid
 	, pp.TempC_Max
 	, pp.TempC_Mean
 FROM periodic pp
-INNER JOIN aperiodic ap
+LEFT JOIN aperiodic ap
 ON pp.patientunitstayid = ap.patientunitstayid;

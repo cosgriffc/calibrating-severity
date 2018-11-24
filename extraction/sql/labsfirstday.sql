@@ -17,16 +17,14 @@ SELECT
   -- , MAX(CASE WHEN labname = '-bands' THEN labresult ELSE null END) as BANDS_max
   , MIN(CASE WHEN labname = 'Base Excess' THEN labresult ELSE null END) as BASEEXCESS_min
   , MAX(CASE WHEN labname = 'Base Excess' THEN labresult ELSE null END) as BASEEXCESS_max
-  , MIN(CASE WHEN labname = 'bicarbonate' THEN labresult ELSE null END) as BICARBONATE_min
-  , MAX(CASE WHEN labname = 'bicarbonate' THEN labresult ELSE null END) as BICARBONATE_max
+  , MIN(CASE WHEN labname = 'bicarbonate' OR labname = 'HCO3' THEN labresult ELSE null END) as BICARBONATE_min
+  , MAX(CASE WHEN labname = 'bicarbonate' OR labname = 'HCO3' THEN labresult ELSE null END) as BICARBONATE_max
   , MIN(CASE WHEN labname = 'BUN' THEN labresult ELSE null end) as BUN_min
   , MAX(CASE WHEN labname = 'BUN' THEN labresult ELSE null end) as BUN_max
   , MIN(CASE WHEN labname = 'BNP' THEN labresult ELSE null end) as BNP_min
   , MAX(CASE WHEN labname = 'BNP' THEN labresult ELSE null end) as BNP_max
   , MIN(CASE WHEN labname = 'CPK' THEN labresult ELSE null end) as CPK_min
   , MAX(CASE WHEN labname = 'CPK' THEN labresult ELSE null end) as CPK_max
- -- , MIN(CASE WHEN labname = 'HCO3' THEN labresult ELSE null END) as HCO3_min -- HCO3 = bicarb, but eICU has both;
- -- , MAX(CASE WHEN labname = 'HCO3' THEN labresult ELSE null END) as HCO3_max -- elected not to combine them.
   , MIN(CASE WHEN labname = 'total bilirubin' THEN labresult ELSE null END) as BILIRUBIN_min
   , MAX(CASE WHEN labname = 'total bilirubin' THEN labresult ELSE null END) as BILIRUBIN_max
   , MIN(CASE WHEN labname = 'calcium' THEN labresult ELSE null END) as CALCIUM_min
