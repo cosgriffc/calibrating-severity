@@ -1,6 +1,4 @@
-# Precision Severity Score Development: Constraining Case Mix to Improve Mortality Probabilities
-## Christopher V. Cosgriff
-<hr />
+## Precision Severity Score Development: Constraining Case Mix to Improve Mortality Probabilities
 
 ## Background
 Illness severity scores have demonstrated poor generalization performance in forecasting
