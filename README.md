@@ -1,4 +1,10 @@
-# calibrating-severity
+## Precision Severity Score Development: Constraining Case Mix to Improve Mortality Probabilities
 
 ## Background
-Severity of illness scores are used for risk adjustment in the critical care setting, but poor calibration has limited their general acceptance by clinicians. The goal of this work is to examine if the calibration of models generalized to cohorts defined by case severity will be improved by constraining case-mix in the training sample.
+Illness severity scores have demonstrated poor generalization performance in forecasting
+mortality, particularly for patients at highest risk. One of the drivers of this discrepancy is the
+preponderance of patients at low risk of death in training cohorts. We sought to examine the effect of
+constraining the training data case mix on the performance of mortality forecasting for high-risk patients.
+
+## This Repository
+Contained herein are all of the original code files used to produce this work. The notebooks are documented and their use should be self-explanatory. Please contact me at cvc@mit.edu with any questions.
