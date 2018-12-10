@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/137119444.svg)](https://zenodo.org/badge/latestdoi/137119444)
+
 ## Precision Severity Score Development: Constraining Case Mix to Improve Mortality Probabilities
 
 ## Background
