@@ -124,7 +124,7 @@ def gen_logodds_plot(model, features, n_features=10, title='Log Odds Plot', save
     coef = coef.reindex(coef.log_odds.abs().sort_values(ascending=False).index).iloc[0:n_features, :]
     coef = coef.reindex(index=coef.index[::-1])
     pos_neg = coef.log_odds > 0
-    color_map = pos_neg.map({True: tableau20[6], False: tableau20[0]})
+    color_map = pos_neg.map({True: tableau20[8], False: tableau20[10]})
     coef.plot(kind='barh', grid=True, sort_columns=False,
                    title=title,
                    color=[color_map.values], ax=plt.axes(), width=0.20,
